@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--responcive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fontawesom-->
+    <script src="https://kit.fontawesome.com/3903820350.js" crossorigin="anonymous"></script>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/title.png" />
+    <!--slider-->
+    <link rel="stylesheet" type="text/css" href="slider/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slider/slick/slick-theme.css"/>
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p>Livreson offerte à partir de 65€ d'achat !</p>
+        <img class="promo" src="img/ribbon.svg" alt="">
+        <div class="container">
+            <a class="logo"href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="none">
+                <span class="panier">Mon panier</span>
+                <span class="fixed"><i class="fas fa-shopping-cart"></i>42,00€</span>
+            </div>
+            <nav>
+                <a href="listingproduct.php">Thés</a>
+                <a href="#">Grands crus</a>
+                <a href="#">Accessoires</a>
+                <a href="#">Epicerie</a>
+                <a href="about.html">Notre histoire</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Le meilleur du thé</h1>
+        <div class="top">
+            <div>    
+                <h2 class="product"><?= $name ?></h2>
+                <p class="desc"><?= $desc ?></p>
+                <p>Ref: <?= $ref ?></p>
+            </div>
+            <div class="rating"><!--
+               --><a href="#5" title="Donner 5 étoiles">★</a><!--
+               --><a href="#4" title="Donner 4 étoiles">★</a><!--
+               --><a href="#3" title="Donner 3 étoiles">★</a><!--
+               --><a href="#2" title="Donner 2 étoiles">★</a><!--
+               --><a href="#1" title="Donner 1 étoile">★</a>
+            </div>
+            <a class="link" href="#">Voir les 56 avis</a>
+        </div>    
+        <div class="form">
+            <img src="<?= $img ?>" alt="">
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="quantity"></label>
+                        <select id="quantity">
+                            <option value="1">Sachet de 100g</option>
+                            <option value="5">Sachet de 500g</option>
+                            <option value="10">Sachet de 1kg</option>
+                        </select>
+                    </div>
+                    <p class="prix"><?= $prix ?>€</p>
+                    <button class="button button-primary">AJOUTER AU PANIER</button>
+                    <a class="link" href="#"><i class="fas fa-heart"></i>Ajouter à ma liste d'entrée</a>
+                </form>
+            </div>
+        </div>
+        <div id="info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, minus, voluptates, quidem, ipsum delectus saepe nulla ducimus reiciendis quam temporibus laboriosam soluta modi beatae a incidunt corrupti ullam id voluptatem facilis possimus rerum quos facere explicabo nisi optio quod hic ad eius architecto molestias nam odio voluptatibus sed illum dolore accusantium quasi placeat sit debitis ratione assumenda atque asperiores maxime.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, corporis aspernatur ab possimus delectus totam eum sapiente reprehenderit blanditiis at inventore omnis quas deserunt eius numquam accusamus deleniti ut magnam nemo repudiandae aut dolores repellendus! Ipsa, soluta numquam voluptatum aut obcaecati perspiciatis magnam ex voluptatem dolores velit est ratione excepturi laborum architecto fugiat animi officia doloribus sapiente similique rem nostrum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, natus dolorum totam ipsum a quo? Rem, modi, facilis, veritatis repellat debitis facere ipsum officia itaque saepe alias officiis distinctio adipisci!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, repellat, quas sapiente aut quaerat natus labore ratione nemo nam ea vero quam dolorum earum doloremque officiis aliquam esse eos iste?</p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="flexf">
+                <p><i class="fas fa-lock"></i>paiment sécurisé</p>
+                <p><i class="fas fa-truck"></i>livraison offerte</p>
+                <p><i class="fas fa-money-bill-alt"></i>carte fidélité</p>
+                <p><i class="fas fa-phone"></i>service client</p>
+                <p><i class="fas fa-check-circle"></i>garantie qualité</p>
+            </div>
+            <nav>
+                <div>
+                    <strong>cup of tea</strong>
+                    <ul>
+                        <li><a href="#">Notre histoir</a></li>
+                        <li><a href="#">Nos boutiques</a></li>
+                        <li><a href="#">Le té de A à Z</a></li>
+                        <li><a href="#">Espace Clients Professionels</a></li>
+                        <li><a href="#">Recrutement</a></li>
+                        <li><a href="#">Contactez-nous!</a></li>
+                        <li><a href="#">L'École du thé</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>commande en ligne</strong>
+                    <ul>
+                        <li><a href="#">Premiere visite</a></li>
+                        <li><a href="#">Aide FAQ</a></li>
+                        <li><a href="#">Service client</a></li>
+                        <li><a href="#">suivre ma comande</a></li>
+                        <li><a href="#">Condition generales de vente</a></li>
+                        <li><a href="#">Information légale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>suivez-nous</strong>
+                    <ul>
+                        <li><a href="#">Npter Histoire</a></li>
+                        <li><a href="#">Nos boutique</a></li>
+                        <li><a href="#">le Thé de A à Z</a></li>
+                        <li><a href="#">Espace Clients Professionels</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="troiswa">
+                <img src="img/logo-3wa.png" alt="logo 3wa">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolor tempore a autem rem dolore porro iure eveniet laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, commodi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, harum, hic! Vero, velit reprehenderit quam cum quibusdam dolores odio cupiditate! Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </footer>        
+</body>
+</html>
